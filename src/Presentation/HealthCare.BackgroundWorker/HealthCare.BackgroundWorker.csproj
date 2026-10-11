@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\HealthCare.Application\HealthCare.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\HealthCare.Persistence\HealthCare.Persistence.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\HealthCare.Infrastructure\HealthCare.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
