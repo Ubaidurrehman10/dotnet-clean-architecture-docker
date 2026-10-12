@@ -1,4 +1,4 @@
-﻿using HealthCare.Domain.Common;
+using HealthCare.Domain.Common;
 using HealthCare.Domain.Enums;
 using HealthCare.Domain.Events;
 using HealthCare.Domain.Exceptions;
@@ -10,7 +10,7 @@ namespace HealthCare.Domain.Entities
     {
         public Guid DoctorId { get; private set; }
         public Guid PatientId { get; private set; }
-        public AppointmentTimeSlot TimeSlot { get; private set; }
+        public AppointmentTimeSlot TimeSlot { get; private set; } = default!;
         public AppointmentStatus Status { get; private set; }
         public BookingSource Source { get; private set; }
         // Actor context

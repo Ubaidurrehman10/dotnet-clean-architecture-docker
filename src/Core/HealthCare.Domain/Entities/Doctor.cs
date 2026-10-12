@@ -1,4 +1,4 @@
-﻿using HealthCare.Domain.Common;
+using HealthCare.Domain.Common;
 using HealthCare.Domain.Enums;
 using HealthCare.Domain.ValueObjects;
 
@@ -6,12 +6,12 @@ namespace HealthCare.Domain.Entities
 {
     public class Doctor : AggregateRoot
     {
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
-        public Email Email { get; private set; }
-        public PhoneNumber PhoneNumber { get; private set; }
+        public string FirstName { get; private set; } = default!;
+        public string LastName { get; private set; } = default!;
+        public Email Email { get; private set; } = default!;
+        public PhoneNumber PhoneNumber { get; private set; } = default!;
         public Specialization Specialization { get; private set; }
-        public string LicenseNumber { get; private set; }
+        public string LicenseNumber { get; private set; } = default!;
         public bool IsActive { get; private set; }
         private readonly List<DoctorSchedule> _schedules = [];
         public IReadOnlyCollection<DoctorSchedule> Schedules => _schedules.AsReadOnly();
